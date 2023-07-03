@@ -15,9 +15,10 @@
   }
   
   .imgContainer {
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 150px;
     position: Ū;
+    margin-right: 20px;
   }
   
   .img {
@@ -25,6 +26,9 @@
   }
   
   .delete {
+    background-color: black;
+    padding: 8px 10px;
+    border-radius: 50%;
     cursor: pointer;
     color: red;
   }

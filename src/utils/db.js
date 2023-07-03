@@ -1,9 +1,8 @@
 import mongoose from "mongoose";
 mongoose.set('strictQuery', false);
-const MONGO =process.env.MONGO_URL
 const connect = async () =>{
  try {
-      await mongoose.connect(MONGO)
+      await mongoose.connect(process.env.MONGO_URL)
       console.log('Connection Successful')
  } catch (error) {
     console.log(error)
