@@ -2,8 +2,10 @@ import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import Button from "../components/Button/Button";
-// import Button from "@/components/Button/Button";
-
+export const metadata = {
+  title: 'NexJS Blog About',
+  description: 'This is About Page',
+}
 const About = () => {
   return (
     <div className={styles.container}>

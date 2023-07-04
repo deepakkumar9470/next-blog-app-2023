@@ -34,7 +34,6 @@ export const POST = async (request) =>{
 
 export const DELETE = async (request, {params}) =>{
     const {id} = params;
-
     try {
         await connect();
         await Posts.findByIdAndDelete(id)

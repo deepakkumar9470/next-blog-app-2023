@@ -2,9 +2,8 @@
 import Link from "next/link";
 import React from "react";
 import styles from "./navbar.module.css";
-import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
+import Image from "next/image";
 
-// import { signOut, useSession } from "next-auth/react";
 
 const links = [
   {
@@ -40,15 +39,13 @@ const links = [
 ];
 
 const Navbar = () => {
-  // const session = useSession();
 
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>
-        next-blog
+        <Image src="/blog.png" alt="blog logo" width={60} height={60}/>
       </Link>
       <div className={styles.links}>
-        {/* <DarkModeToggle /> */}
         {links.map((link) => (
           <Link key={link.id} href={link.url} className={styles.link}>
             {link.title}
