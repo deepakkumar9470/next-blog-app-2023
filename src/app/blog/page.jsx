@@ -7,7 +7,7 @@ export const metadata = {
   description: 'This is Blog Page',
 }
 async function getData() {
-  const res = await fetch('/api/posts',{ cache: 'no-store' })
+  const res = await fetch(`${process.env.URL}/api/posts`,{ cache: 'no-store' })
 
   if (!res.ok) {
     throw new Error('Failed to fetch data')
